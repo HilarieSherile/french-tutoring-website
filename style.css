@@ -357,6 +357,13 @@ h2 {
   font-size: 0.95rem;
 }
 
+.package {
+  color: var(--pink-500);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
 .full {
   margin-top: 25px;
   text-align: center;
@@ -420,6 +427,36 @@ h2 {
 .large {
   font-size: 1rem;
   white-space: nowrap;
+}
+
+.contact-details {
+  display: grid;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.contact-link {
+  align-items: center;
+  background: var(--pink-50);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  display: flex;
+  font-weight: 700;
+  gap: 12px;
+  padding: 12px 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.contact-link:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.contact-link .card-icon {
+  height: 32px;
+  width: 32px;
+  font-size: 0.95rem;
 }
 
 footer {
